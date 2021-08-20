@@ -81,6 +81,15 @@ document.getElementById('delivery-with').addEventListener('click', function() {
 
 
 
+// function getStorage() {
+//     const balanceTotal = document.getElementById('storage-count');
+//     const balanceTotalText = balanceTotal.innerText;
+//     const previousBalanceTotal = parseFloat(balanceTotalText);
+
+//     return previousBalanceTotal;
+// }
+
+
 
 
 
