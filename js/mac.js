@@ -94,7 +94,6 @@ function calculate(memory, storage, delivery) {
     })
 
 
-
 }
 // update memory cost
 
@@ -107,7 +106,6 @@ document.getElementById('memory-8gb').addEventListener('click', function() {
 });
 
 document.getElementById('memory-16gb').addEventListener('click', function() {
-
 
 
     memoryUpdate('16gb');
