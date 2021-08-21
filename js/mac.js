@@ -65,11 +65,37 @@ function calculate(memory, storage, delivery) {
     // delivery
     let deliveryCostText = deliveryUpdate(delivery).innerText;
     const deliveryCost = parseInt(deliveryCostText);
-    // blance
+    // balance
 
     let currentBalance = document.getElementById('sub-total').innerText;
     let totalBalance = document.getElementById('total-price');
     totalBalance.innerText = memoryCost + storageCost + deliveryCost + parseInt(currentBalance);
+
+
+    // promo code
+    document.getElementById('button-promo').addEventListener('click', function() {
+        const promoField = document.getElementById('my-promo');
+        const promoCode = promoField.value;
+
+        if (promoCode == 'stevekaku') {
+
+            const total = totalBalance.innerText;
+            const myTotal = total / 20;
+            const totalPrice = document.getElementById('my-total').innerText;
+            totalPrice = myTotal;
+
+
+        }
+        // document.getElementById('my-total').innerText = total;
+
+        promoField.value = '';
+
+
+    })
+
+
+
+
 
 }
 // update memory cost
