@@ -35,7 +35,6 @@ function storageUpdate(isStorage) {
 }
 
 
-
 // delivery
 function deliveryUpdate(isDelivery) {
 
@@ -93,7 +92,6 @@ function calculate(memory, storage, delivery) {
 
     })
 
-
 }
 // update memory cost
 
@@ -111,7 +109,7 @@ document.getElementById('memory-16gb').addEventListener('click', function() {
     memoryUpdate('16gb');
     calculate('16gb');
 });
-// sttoage update
+// stoage update
 
 document.getElementById('default').addEventListener('click', function() {
 
