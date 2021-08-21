@@ -19,13 +19,9 @@ function storageUpdate(isStorage) {
 
     if (isStorage == '256gb') {
         storageTotalCost.innerText = 0;
-    }
-
-    if (isStorage == '512gb') {
+    } else if (isStorage == '512gb') {
         storageTotalCost.innerText = 100;
-    }
-
-    if (isStorage == '1tb') {
+    } else if (isStorage == '1tb') {
         storageTotalCost.innerText = 180;
     }
     return storageTotalCost;
@@ -43,8 +39,7 @@ function deliveryUpdate(isDelivery) {
 
     if (isDelivery == 'delivery-free') {
         deliveryTotalCost.innerText = 0;
-    }
-    if (isDelivery == 'delivery-with') {
+    } else if (isDelivery == 'delivery-with') {
         deliveryTotalCost.innerText = 20;
     }
     return deliveryTotalCost;
@@ -67,8 +62,9 @@ function calculate(memory, storage, delivery) {
     // balance
 
     let currentBalance = document.getElementById('sub-total').innerText;
+    let updatedCurrentBalance = parseInt(currentBalance)
     let totalBalance = document.getElementById('total-price');
-    totalBalance.innerText = memoryCost + storageCost + deliveryCost + parseInt(currentBalance);
+    totalBalance.innerText = memoryCost + storageCost + deliveryCost + updatedCurrentBalance;
 
 
     // promo code
@@ -93,6 +89,11 @@ function calculate(memory, storage, delivery) {
     })
 
 }
+
+
+
+
+
 // update memory cost
 
 document.getElementById('memory-8gb').addEventListener('click', function() {
