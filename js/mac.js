@@ -95,8 +95,6 @@ function calculate(memory, storage, delivery) {
 
 
 
-
-
 }
 // update memory cost
 
